@@ -1,4 +1,4 @@
-import './App.css';
+process.env.REACT_APP_NEWS_APIimport './App.css';
 import React from 'react'
 import NavBar from './components/NavBar'
 import NewsContent from './components/NewsContent'
@@ -8,7 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 export default function App  (){
     {document.title="NewsBoy"}
-    const API_KEY="5a485da8602d4228bf1edde9d4745b6e"
+    const API_KEY=process.env.REACT_APP_NEWS_API
     return (
       <div>
         <Router>
